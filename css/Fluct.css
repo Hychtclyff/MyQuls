@@ -464,7 +464,9 @@
     padding-left: 4rem;
     padding-right: 4rem;
   }
-
+  .sticky-top {
+    overflow: hidden;
+  }
   .home,
   .about,
   .service {
@@ -492,6 +494,9 @@
   .fl-navbar {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .sticky-top {
+    overflow: hidden;
   }
   .home,
   .about,
