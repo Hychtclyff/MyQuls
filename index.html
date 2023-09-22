@@ -314,7 +314,7 @@
         </div>
 
         <div class="conct-form">
-          <form>
+          <form name="contactMe">
             <div class="mb-3">
               <input
                 type="text"
@@ -322,6 +322,7 @@
                 id="InputName"
                 aria-describedby="NameHelp"
                 placeholder="Your Name"
+                name="nama"
               />
             </div>
 
@@ -331,16 +332,21 @@
                 class="form-control"
                 id="InputEmail"
                 placeholder="Email"
+                name="email"
               />
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label"
+                name="pesan"
                 >Your Massage</label
               >
               <textarea
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
+                name="pesan"
               ></textarea>
             </div>
 
@@ -392,6 +398,19 @@
       btnLenguage.addEventListener("click", () => {
         tools.classList.add("d-none");
         lenguage.classList.remove("d-none");
+      });
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyMf7jJmIcIPdo_Ab13SKzZhV4FL9chVsgbQWvwGceCcvXDI52rcvhhZLoKC9zbth4k/exec";
+      const form = document.forms["contactMe"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
       });
     </script>
   </body>

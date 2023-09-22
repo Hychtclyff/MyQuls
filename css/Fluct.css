@@ -214,9 +214,9 @@
 /* end */
 
 /* about */
-.about {
-  /* background-color: var(--gelap); */
-}
+/* .about {
+  background-color: var(--gelap);
+} */
 
 .about span {
   margin: 0;
@@ -455,9 +455,9 @@
   display: flex;
   flex-direction: row;
 }
-.contact * {
-  /* border: 1px solid red; */
-}
+/* .contact * {
+  border: 1px solid red;
+} */
 .contact ul {
   padding-top: 3rem;
   list-style: none;
