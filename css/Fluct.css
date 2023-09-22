@@ -91,7 +91,8 @@
 .home span,
 .about span,
 .my-skills span,
-.service span {
+.service span,
+.contact span {
   font-family: "Zen Dots", cursive;
   font-size: 1rem;
   color: rgb(255, 255, 255);
@@ -116,12 +117,14 @@
   letter-spacing: 0.5px;
 }
 
-.home h4 {
+.home h4,
+.contact h4 {
   color: rgb(255, 255, 255);
 }
 .home p,
 .about p,
-.service p {
+.service p,
+.contact p {
   color: rgb(255, 255, 255);
   font-family: "Sirin Stencil", cursive;
 }
@@ -137,7 +140,8 @@
 
 .home,
 .about,
-.service {
+.service,
+.contact {
   background-color: var(--bg);
   padding: 8rem 10rem 12rem 10rem;
 }
@@ -211,7 +215,7 @@
 
 /* about */
 .about {
-  background-color: var(--gelap);
+  /* background-color: var(--gelap); */
 }
 
 .about span {
@@ -444,6 +448,53 @@
 }
 
 /* end */
+
+/* CONTACT */
+
+.contact .content-conct {
+  display: flex;
+  flex-direction: row;
+}
+.contact * {
+  /* border: 1px solid red; */
+}
+.contact ul {
+  padding-top: 3rem;
+  list-style: none;
+  display: flex;
+}
+
+.contact li {
+  margin: 0.5rem;
+}
+.contact a {
+  text-decoration: none;
+  color: grey;
+}
+.contact i {
+  color: grey;
+}
+.contact a:hover,
+.contact i:hover {
+  color: white;
+}
+.contact .conct-desc {
+  margin: 1rem;
+  width: 50%;
+}
+
+.conct-desc span {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .conct-form {
+  margin: 1rem;
+  width: 50%;
+}
+
+/* END */
 
 /* Leptop  */
 @media (max-width: 992px) {
