@@ -1,0 +1,529 @@
+:root {
+  --gelap: #000;
+  --bg: #0b0b0c;
+
+  --biru: rgb(14, 2, 175);
+  --merah: #7e0000;
+  --kuning: rgb(140, 97, 3);
+}
+
+/* Navbar */
+
+.fl-navbar h2 {
+  font-family: "Akronim", cursive;
+  color: white;
+}
+
+.fl-navbar .nav-map a,
+.navigasi a {
+  color: grey;
+}
+.fl-navbar .nav-map a:hover {
+  color: white;
+}
+.fl-navbar {
+  background-color: var(--gelap);
+  padding: 0 15rem 0 15rem;
+}
+
+.fl-navbar .nav-map {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5rem;
+}
+.fl-navbar ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.nav-map a {
+  padding: 0;
+  margin: 1rem;
+}
+
+.nav-map li {
+  top: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-map a::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  left: 50%;
+  bottom: 12px;
+  border-radius: 20px;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+
+.nav-map a:hover::before {
+  width: 50%;
+  background: var(--biru);
+  box-shadow: 0 0 1px var(--biru), 0 0 8px var(--biru), 0 0 16px var(--biru),
+    0 0 24px var(--biru);
+  transition: 0.5s;
+}
+
+.active::after {
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  border-radius: 20px;
+  background: var(--merah);
+  box-shadow: 0 0 1px var(--merah), 0 0 8px var(--merah), 0 0 16px var(--biru),
+    0 0 24px var(--merah);
+}
+/* end */
+
+/* FONT */
+.home span,
+.about span,
+.my-skills span,
+.service span {
+  font-family: "Zen Dots", cursive;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.home span,
+.home h4 {
+  font-family: "Sirin Stencil", cursive;
+}
+
+.home h2 span {
+  font-size: 2rem;
+  font-family: "Skranji", cursive;
+  color: var(--biru);
+}
+
+.home h2,
+.service h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Skranji", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.home h4 {
+  color: rgb(255, 255, 255);
+}
+.home p,
+.about p,
+.service p {
+  color: rgb(255, 255, 255);
+  font-family: "Sirin Stencil", cursive;
+}
+.fl-navbar li,
+.my-skills li {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Genos", sans-serif;
+}
+/* end */
+
+/* Default Layout*/
+
+.home,
+.about,
+.service {
+  background-color: var(--bg);
+  padding: 8rem 10rem 12rem 10rem;
+}
+/* End */
+
+/* Home */
+
+.home h2,
+.home h2 span {
+  font-size: 3rem;
+}
+.home .home-desc {
+  padding: 5rem 0 3rem 10em;
+  width: 50%;
+}
+
+.home .myimg {
+  margin: 5rem 0 0 0;
+  padding: 0;
+  left: 50%;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  overflow: visible;
+  border-radius: 50%;
+  box-shadow: 0 0 1px var(--biru), 0 0 8px var(--biru), 0 0 16px var(--biru),
+    0 0 24px var(--biru);
+}
+.home img {
+  position: relative;
+  bottom: 70%;
+  left: -60px;
+  margin: 0;
+  padding: 0;
+  width: 25rem;
+  height: 25rem;
+}
+.home .mysosmed {
+  margin: 0;
+}
+.mysosmed ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.mysosmed li {
+  margin: 0.5em;
+  padding: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  border: 1px solid var(--biru);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.mysosmed li:hover {
+  box-shadow: 0 0 1px var(--biru), 0 0 8px var(--biru), 0 0 16px var(--biru),
+    0 0 24px var(--biru);
+}
+
+.mysosmed i {
+  color: grey;
+}
+.mysosmed i:hover {
+  color: var(--biru);
+}
+
+/* end */
+
+/* about */
+.about {
+  background-color: var(--gelap);
+}
+
+.about span {
+  margin: 0;
+  padding: 0;
+}
+
+.aboutMe span::before {
+  content: "";
+  position: relative;
+  display: block;
+  left: 97px;
+  bottom: -14px;
+  width: 250px;
+  height: 2px;
+  border-radius: 20px;
+  z-index: 1;
+  background: var(--merah);
+  box-shadow: 0 0 1px var(--merah), 0 0 8px var(--merah), 0 0 16px var(--biru),
+    0 0 24px var(--merah);
+}
+.about P {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.about .aboutMe {
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: var(--bg);
+  box-shadow: 0 0 1px var(--merah), 0 0 8px var(--merah), 0 0 16px var(--biru),
+    0 0 24px var(--merah);
+}
+.aboutMe img {
+  position: relative;
+  padding: 0;
+  margin: 2rem 1rem 2rem 1rem;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+}
+
+.about .my-skills {
+  padding: 1rem;
+}
+.my-skills span::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  left: -5px;
+  bottom: 2px;
+  width: 50px;
+  height: 2px;
+  border-radius: 20px;
+  z-index: 1;
+  background: var(--merah);
+  box-shadow: 0 0 1px var(--merah), 0 0 8px var(--merah), 0 0 16px var(--biru),
+    0 0 24px var(--merah);
+}
+
+.my-skills ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 5rem 5rem;
+  grid-template-columns: 14rem 14rem 14rem;
+}
+
+.my-skills li {
+  display: flex;
+  flex-direction: row;
+  border: 1px var(--biru) solid;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.my-skills .tools li {
+  border: 1px solid var(--merah);
+}
+.my-skills img {
+  height: 2rem;
+}
+.my-skills .navigasi {
+  margin: 1rem;
+}
+.my-skills .navigasi {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigasi a {
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.navigasi a:hover {
+  color: white;
+  background-color: var(--biru);
+  border-radius: 10px;
+}
+
+/* end */
+
+/* Service */
+
+.service span {
+  font-size: 1.5rem;
+}
+
+.service {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.service span {
+  display: flex;
+  justify-content: center;
+}
+
+.service .my-service {
+  margin-top: 2rem;
+  display: flex;
+  flex: row;
+  justify-content: center;
+}
+.service .design-service {
+  padding: 2rem;
+  margin: 1rem;
+  width: 18rem;
+  height: 19rem;
+  border-radius: 10px;
+  border: 1px solid blue;
+  box-shadow: 0 0 1px var(--biru), 0 0 8px var(--biru), 0 0 16px var(--biru),
+    0 0 24px var(--biru);
+}
+
+.service i {
+  font-size: 2rem;
+  color: white;
+}
+
+.design-service .btn {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+}
+
+.design-service .btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 400px;
+  z-index: 1;
+  backdrop-filter: blur(15px);
+}
+
+.design-service .btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: -3px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.design-service .btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: -3px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.design-service .btn:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+.design-service .btn:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+.design-service .btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translate(0);
+  transition: 0.5s;
+  filter: blur(0px);
+}
+
+.design-service .btn a:hover:before {
+  transform: skewX(45deg) translate(200px);
+}
+
+/* end */
+
+/* Leptop  */
+@media (max-width: 992px) {
+  .fl-navbar {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .home,
+  .about,
+  .service {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+/* Tablet*/
+@media (max-width: 768px) {
+  .fl-navbar {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .home,
+  .about,
+  .service {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .home .home-desc {
+    padding-left: 3rem;
+  }
+  .home img {
+    margin: 0;
+  }
+
+  .about span::before {
+    width: 160px;
+  }
+
+  .my-skills ul {
+    grid-template-columns: 14rem 14rem;
+  }
+}
+
+/* Mobile phone */
+@media (max-width: 576px) {
+  .fl-navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .home,
+  .about,
+  .service {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .home .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .home .home-desc {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about span::before {
+    width: 100px;
+  }
+  .about p {
+    margin: 0;
+  }
+  .my-skills ul {
+    grid-template-columns: 14rem;
+  }
+
+  .service .my-service {
+    flex-direction: column;
+  }
+}
