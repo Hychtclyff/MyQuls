@@ -57,7 +57,7 @@
   width: 15px;
   height: 2px;
   left: 50%;
-  bottom: 12px;
+  bottom: 5px;
   border-radius: 20px;
   transition: 0.5s;
   transform: translateX(-50%);
@@ -68,15 +68,15 @@
   background: var(--biru);
   box-shadow: 0 0 1px var(--biru), 0 0 8px var(--biru), 0 0 16px var(--biru),
     0 0 24px var(--biru);
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .active::after {
-  transition: 0.5s;
+  transition: 1s;
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 12px;
+  bottom: 5px;
   transform: translateX(-50%);
   width: 50%;
   height: 2px;
@@ -143,7 +143,7 @@
 .service,
 .contact {
   background-color: var(--bg);
-  padding: 8rem 10rem 12rem 10rem;
+  padding: 8rem 15rem 12rem 15rem;
 }
 /* End */
 
@@ -153,17 +153,24 @@
 .home h2 span {
   font-size: 3rem;
 }
+
 .home .home-desc {
-  padding: 5rem 0 3rem 10em;
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 0 0rem 0rem;
+}
+.home .content-desc {
+  /* padding: 2rem 0 2rem 6rem; */
   width: 50%;
 }
 
 .home .myimg {
-  margin: 5rem 0 0 0;
+  position: relative;
+  /* margin: 4rem; */
   padding: 0;
-  left: 50%;
-  width: 15rem;
-  height: 15rem;
+  /* left: -60px; */
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   overflow: visible;
   border-radius: 50%;
@@ -172,12 +179,12 @@
 }
 .home img {
   position: relative;
-  bottom: 70%;
-  left: -60px;
+  bottom: 50px;
+  left: -30px;
   margin: 0;
   padding: 0;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
 }
 .home .mysosmed {
   margin: 0;
@@ -455,9 +462,7 @@
   display: flex;
   flex-direction: row;
 }
-/* .contact * {
-  border: 1px solid red;
-} */
+
 .contact ul {
   padding-top: 3rem;
   list-style: none;
@@ -480,7 +485,7 @@
 }
 .contact .conct-desc {
   margin: 1rem;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .conct-desc span {
@@ -491,7 +496,7 @@
 
 .contact .conct-form {
   margin: 1rem;
-  width: 50%;
+  /* width: 50%; */
 }
 
 /* END */
@@ -504,9 +509,13 @@
   }
   .home,
   .about,
-  .service {
+  .service,
+  .contact {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+  .home .content-desc {
+    padding-left: 0;
   }
 }
 /* Tablet*/
@@ -518,17 +527,22 @@
   .sticky-top {
     overflow: hidden;
   }
+
   .home,
   .about,
   .service {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .home .home-desc {
-    padding-left: 3rem;
+
+  .home .myimg {
+    bottom: -30px;
+    height: 15rem;
+    width: 15rem;
   }
   .home img {
-    margin: 0;
+    width: 17rem;
+    height: 17rem;
   }
 
   .about span::before {
@@ -537,6 +551,10 @@
 
   .my-skills ul {
     grid-template-columns: 14rem 14rem;
+  }
+
+  .content-conct {
+    flex-direction: column;
   }
 }
 
@@ -551,19 +569,18 @@
   }
   .home,
   .about,
-  .service {
+  .service,
+  .contact {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .home .row {
+  .home .home-desc {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
-  .home .home-desc {
-    width: 100%;
-    margin-top: 2rem;
-    padding: 1rem;
+  .home .content-desc {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -579,7 +596,7 @@
     grid-template-columns: 14rem;
   }
 
-  .service .my-service {
+  .contact .content-conct {
     flex-direction: column;
   }
 }
